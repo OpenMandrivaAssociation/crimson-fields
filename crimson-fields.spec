@@ -11,7 +11,6 @@ Summary:	Crimson Fields - Tactical war game with hexagonal grid
 License:	GPL
 Group:		Games/Strategy
 URL:		http://crimson.seul.org/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 Source:		http://crimson.seul.org/files/%{pname}-%{version}.tar.bz2
 
