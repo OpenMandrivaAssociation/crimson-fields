@@ -72,17 +72,6 @@ touch levels/*.lev
 rm -rf $RPM_BUILD_ROOT
 %makeinstall_std
 
-mkdir -p $RPM_BUILD_ROOT/%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT/%{_menudir}/%{name}
-?package(%{name}): \
- command="%{_gamesbindir}/%{pname}" \
- icon="%{pname}.png" \
- needs="x11" \
- section="More Applications/Games/Strategy" \
- title="Crimson Fields" \
- longtitle="Tactical war game with hexagonal grid" \
- xdg="true"
-EOF
 
 desktop-file-install --vendor="" \
   --remove-category="Application" \
@@ -108,7 +97,6 @@ rm -rf $RPM_BUILD_ROOT
 %files 
 %defattr(-,root,root)
 %doc ChangeLog COPYING NEWS README 
-%{_menudir}/%{name}
 %{_iconsdir}/%{pname}.png
 %{_miconsdir}/%{pname}.png
 %{_liconsdir}/%{pname}.png
