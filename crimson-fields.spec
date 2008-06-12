@@ -85,11 +85,15 @@ install -m644 gfx/crimson.png -D $RPM_BUILD_ROOT%{_liconsdir}/%{pname}.png
 convert -geometry 32x32 gfx/crimson.png $RPM_BUILD_ROOT%{_iconsdir}/%{pname}.png
 convert -geometry 16x16 gfx/crimson.png $RPM_BUILD_ROOT%{_miconsdir}/%{pname}.png
 
+%if %mdkversion < 200900
 %post
 %update_menus
+%endif
 
+%if %mdkversion < 200900
 %postun
 %clean_menus
+%endif
 
 %clean
 rm -rf $RPM_BUILD_ROOT
