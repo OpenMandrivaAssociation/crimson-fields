@@ -1,5 +1,5 @@
-%define	version	0.5.1
-%define	release	%mkrel 3
+%define	version	0.5.3
+%define	release	%mkrel 1
 
 %define	pname	crimson
 %define	name	%{pname}-fields
@@ -119,6 +119,3 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man6/comet.*
 %{_mandir}/man6/cfed.*
 %{_mandir}/man6/bi2cf.*
-
-
-
