@@ -119,3 +119,77 @@ rm -rf $RPM_BUILD_ROOT
 %{_mandir}/man6/comet.*
 %{_mandir}/man6/cfed.*
 %{_mandir}/man6/bi2cf.*
+
+
+%changelog
+* Thu Dec 09 2010 Oden Eriksson <oeriksson@mandriva.com> 0.5.3-3mdv2011.0
++ Revision: 617438
+- the mass rebuild of 2010.0 packages
+
+* Thu Sep 10 2009 Thierry Vignaud <tv@mandriva.org> 0.5.3-2mdv2010.0
++ Revision: 437154
+- rebuild
+
+* Fri Apr 03 2009 trem <trem@mandriva.org> 0.5.3-1mdv2009.1
++ Revision: 363933
+- update to 0.5.3
+- fix the bug 49508
+
+  + Oden Eriksson <oeriksson@mandriva.com>
+    - lowercase ImageMagick
+
+* Wed Jul 23 2008 Thierry Vignaud <tv@mandriva.org> 0.5.1-3mdv2009.0
++ Revision: 243727
+- rebuild
+- drop old menu
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+* Fri Dec 21 2007 Olivier Blin <oblin@mandriva.com> 0.5.1-1mdv2008.1
++ Revision: 136347
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+
+* Thu Jan 25 2007 Lenny Cartier <lenny@mandriva.com> 0.5.1-1mdv2007.0
++ Revision: 113282
+- Update to 0.5.1
+
+* Tue Dec 12 2006 Lenny Cartier <lenny@mandriva.com> 0.5.0-1mdv2007.1
++ Revision: 95345
+- Update to 0.5.0
+
+* Fri Oct 27 2006 Nicolas LÃ©cureuil <neoclust@mandriva.org> 0.4.9-3mdv2007.1
++ Revision: 73078
+- Fix file list
+- Fix BuildRequires
+- import crimson-fields-0.4.9-2mdv2007.0
+
+* Fri Aug 04 2006 Lenny Cartier <lenny@mandriva.com> 0.4.9-2mdv2007.0
+- xdg
+
+* Thu Nov 03 2005 trem <trem@zarb.org> 0.4.9-1mdk
+- 0.4.9
+
+* Wed Feb 23 2005 Lenny Cartier <lenny@mandrakesoft.com> 0.4.7-1mdk
+- 0.4.7
+
+* Wed Jan 19 2005 Lenny Cartier <lenny@mandrakesoft.com> 0.4.6-1mdk
+- 0.4.6
+
+* Sat Jun 19 2004 Abel Cheung <deaddog@deaddog.org> 0.4.2-1mdk
+- New version
+- Build map editor and other utils as well
+
+* Thu Mar 04 2004 Lenny Cartier <lenny@mandrakesoft.com> 0.4.1-1mdk
+- 0.4.1
+
+* Wed Feb 25 2004 Per Øyvind Karlsen <peroyvind@linux-mandrake.com> 0.4.0-1mdk
+- 0.4.0
+- buildrequires
+- cosmetics
+- drop unused icons from src.rpm
+
