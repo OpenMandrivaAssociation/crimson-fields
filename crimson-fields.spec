@@ -1,5 +1,5 @@
 %define	version	0.5.3
-%define	release	%mkrel 3
+%define release	4
 
 %define	pname	crimson
 %define	name	%{pname}-fields
