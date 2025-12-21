@@ -15,6 +15,11 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
 Source:		http://crimson.seul.org/files/%{pname}-%{version}.tar.bz2
 
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	imagemagick 
 BuildRequires:  SDL_mixer-devel 
 BuildRequires:  SDL_ttf-devel 
